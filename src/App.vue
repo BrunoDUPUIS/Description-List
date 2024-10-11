@@ -188,7 +188,7 @@ p {
 }
 svg {
   margin-top: 10px;
-  color: grey;
+  color: red;
   align-self: flex-end;
 }
 
