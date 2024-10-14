@@ -61,8 +61,8 @@ const fourthPerson = {
     <h1>Description list</h1>
     <div class="cards">
       <div>
+        <img src="./assets/imgs/emily-parker.jpg" alt="" />
         <div>
-          <img src="./assets/imgs/emily-parker.jpg" alt="" />
           <h2>{{ firstPerson.firstname }} {{ firstPerson.lastname }}</h2>
           <p>
             {{ firstPerson.gender === 'female' ? 'She' : 'He' }} is a
@@ -79,11 +79,12 @@ const fourthPerson = {
             {{ firstPerson.pet.age }}-years-old {{ firstPerson.pet.species }}.
           </p>
         </div>
+
         <font-awesome-icon :icon="['fas', 'heart']" />
       </div>
       <div>
+        <img src="./assets/imgs/marcus-bennett.jpg" alt="" />
         <div>
-          <img src="./assets/imgs/marcus-bennett.jpg" alt="" />
           <h2>{{ secondPerson.firstname }} {{ secondPerson.lastname }}</h2>
           <p>
             {{ secondPerson.gender === 'female' ? 'She' : 'He' }} is a
@@ -103,9 +104,10 @@ const fourthPerson = {
         </div>
         <font-awesome-icon :icon="['fas', 'heart']" />
       </div>
+
       <div>
+        <img src="./assets/imgs/sophia-rodriguez.jpg" alt="" />
         <div>
-          <img src="./assets/imgs/sophia-rodriguez.jpg" alt="" />
           <h2>{{ thirdPerson.firstname }} {{ thirdPerson.lastname }}</h2>
           <p>
             {{ thirdPerson.gender === 'female' ? 'She' : 'He' }} is a
@@ -124,9 +126,10 @@ const fourthPerson = {
         </div>
         <font-awesome-icon :icon="['fas', 'heart']" />
       </div>
+
       <div>
+        <img src="./assets/imgs/olivier-hughes.jpg" alt="" />
         <div>
-          <img src="./assets/imgs/olivier-hughes.jpg" alt="" />
           <h2>{{ fourthPerson.firstname }} {{ fourthPerson.lastname }}</h2>
           <p>
             {{ fourthPerson.gender === 'female' ? 'She' : 'He' }} is a
@@ -144,12 +147,12 @@ const fourthPerson = {
             {{ fourthPerson.pet.age }}-years-old {{ fourthPerson.pet.species }}.
           </p>
         </div>
+
         <font-awesome-icon :icon="['fas', 'heart']" />
       </div>
     </div>
   </main>
 </template>
-
 <style scoped>
 main {
   padding: 50px;
@@ -163,15 +166,19 @@ img {
   object-position: top;
   aspect-ratio: 16/10;
   margin-bottom: 20px;
+  /* border: 1px solid red; */
 }
 p {
   line-height: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .cards {
   /* border: 2px solid blue; */
   gap: 9px;
   display: flex;
+}
+.cards div {
+  /* border: 1px solid orange; */
 }
 .cards > div {
   width: calc((100% - 27px) / 4);
@@ -182,6 +189,8 @@ p {
   box-shadow: 0 0 9px grey;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 .cards > div > div {
   /* border: 1px solid green; */
@@ -190,6 +199,7 @@ svg {
   margin-top: 10px;
   color: red;
   align-self: flex-end;
+  /* border: 1px solid black; */
 }
 
 /* ======================= */
